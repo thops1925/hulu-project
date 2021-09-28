@@ -8,7 +8,7 @@ export default function Home({ results }) {
   return (
     <div>
       <Head>
-        <title>Hulu Clone</title>
+        <title>Thopz Project Clone</title>
       </Head>
 
       <Header />
@@ -27,7 +27,7 @@ export async function getServerSideProps(context) {
   ).then((res) => res.json());
   return {
     props: {
-      results: request,
+      results: request.results,
     },
   };
 }
